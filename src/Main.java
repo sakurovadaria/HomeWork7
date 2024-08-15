@@ -43,12 +43,8 @@ public class Main {
         System.out.println("\nTask 4");
         int initialAmount = 15000; //сумма, которую нужно отложить//
         int account = 0; //"счет"//
-        for (int months = 1; account < 12_000_000; months++) {
-            if (months == 1) {
-                account = account + initialAmount;   //счет + ежемесячная сумма зачисления//
-                System.out.println("Месяц " + months + ", сумма накоплений равна "
-                        + account + " рублей.");
-            }
+        int months = 1;
+        for (; account < 12_000_000; months++) {
             account = account + initialAmount;  //счет + ежемесячная сумма зачисления//
             account = account + account / 100 * 7; //процент 7% по вкладу//
             System.out.println("Месяц " + months + ", сумма накоплений равна "
@@ -58,12 +54,12 @@ public class Main {
         System.out.println("\nTask 5");
         int initialAmount1 = 15000; //сумма, которую нужно отложить//
         int account1 = 0; //"счет"//
-        int months = 1;
-        for (; account1 < 12_000_000; months++) {
+        int months1 = 1;
+        for (; account1 < 12_000_000; months1++) {
             account1 = account1 + initialAmount1;  //счет + ежемесячная сумма зачисления//
             account1 = account1 + account1 / 100 * 7; //процент 7% по вкладу//
-            if (months % 6 == 0) {
-                System.out.println("Месяц " + months + ", сумма накоплений равна "
+            if (months1 % 6 == 0) {
+                System.out.println("Месяц " + months1 + ", сумма накоплений равна "
                         + account1 + " рублей.");
             }
         }
