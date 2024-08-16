@@ -78,6 +78,7 @@ public class Main {
             friday += 7;
         } while (friday <= 31);
 
+
         System.out.println("\nTask 8");
         int yearsBefore = 2024 - 200;
         int yearsAfter = 2024 + 100;
